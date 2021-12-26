@@ -22,7 +22,7 @@ public class VlistTool implements ListTool<MovingCreature> {
         // but not List<MovingCreature>
         List<? extends MovingCreature> covariantMovingCreatures = humans;
         List<? super MovingCreature> contravariantMovingCreatures = animals;
-        GenericResponse<Animal>[] animalsArray = (GenericResponse<Animal>[]) new Object[];
+        GenericResponse<Animal>[] animalsArray = (GenericResponse<Animal>[]) new Object[10];
     }
 
     public void cpyList(List<? super MovingCreature> out, List<? extends MovingCreature> in) {

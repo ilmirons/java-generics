@@ -1,0 +1,53 @@
+// class version 55.0 (55)
+// access flags 0x21
+public class org/example/generic/lib/erasure/ObjectMain {
+
+  // compiled from: ObjectMain.java
+
+  // access flags 0x1
+  public <init>()V
+   L0
+    LINENUMBER 6 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+    RETURN
+   L1
+    LOCALVARIABLE this Lorg/example/generic/lib/erasure/ObjectMain; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x9
+  public static main([Ljava/lang/String;)V
+   L0
+    LINENUMBER 9 L0
+    NEW java/util/ArrayList
+    DUP
+    INVOKESPECIAL java/util/ArrayList.<init> ()V
+    ASTORE 1
+   L1
+    LINENUMBER 10 L1
+    ALOAD 1
+    LDC "Hello object world"
+    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z (itf)
+    POP
+   L2
+    LINENUMBER 11 L2
+    ALOAD 1
+    ICONST_0
+    INVOKEINTERFACE java/util/List.get (I)Ljava/lang/Object; (itf)
+    ASTORE 2
+   L3
+    LINENUMBER 12 L3
+    GETSTATIC java/lang/System.out : Ljava/io/PrintStream;
+    ALOAD 2
+    INVOKEVIRTUAL java/io/PrintStream.println (Ljava/lang/Object;)V
+   L4
+    LINENUMBER 13 L4
+    RETURN
+   L5
+    LOCALVARIABLE args [Ljava/lang/String; L0 L5 0
+    LOCALVARIABLE l Ljava/util/List; L1 L5 1
+    LOCALVARIABLE s Ljava/lang/Object; L3 L5 2
+    MAXSTACK = 2
+    MAXLOCALS = 3
+}
