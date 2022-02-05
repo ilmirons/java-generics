@@ -12,6 +12,7 @@ public class Main {
         makeCreatureMove(b);
         makeCreatureMove(mc);
         makeCreatureMove(h2);
+        makeCreatureMove((Human)mc);
     }
 
     static void makeCreatureMove(Human h) {

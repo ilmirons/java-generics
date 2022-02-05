@@ -17,8 +17,8 @@ public class GenericList {
         // Generics to the rescue
         List<String> l = new ArrayList<>();
         l.add("test2");
-        // we may also use type inference and do it in one line
-        var l2 = List.of("test2");
-        // Integer i2 = v.get(0); // get returns a value of type String as this is the value of the type variable
+
+        String s = l.get(0);
+        // Integer i2 = l.get(0); get returns a value of type String as this is the value of the type variable
     }
 }
